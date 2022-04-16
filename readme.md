@@ -19,5 +19,5 @@ blend trees. The transitions are a little bit sloppy using the keyboard but a ga
 
 ### Builds
 
-Find the project build in **/Builds**. I builded this project usign Ubuntu 20.04, so I could not test the windows executable, in the case
+I builded this project usign Ubuntu 20.04, so I could not test the windows executable, in the case
 that there is any error please let me know
