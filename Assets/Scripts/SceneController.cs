@@ -26,4 +26,9 @@ public class SceneController : MonoBehaviour
     {
         EventManager.OnReset.Invoke();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
