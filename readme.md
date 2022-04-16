@@ -15,3 +15,9 @@ This architecture has several benefits:
 
 I added full fledged 3D model with textures, walking and idle animations. The animations are blended using unity animator system and 
 blend trees. The transitions are a little bit sloppy using the keyboard but a game controller gives a much better feel.
+
+
+### Builds
+
+Find the project build in **/Builds**. I builded this project usign Ubuntu 20.04, so I could not test the windows executable, in the case
+that there is any error please let me know
