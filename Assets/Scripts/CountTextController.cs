@@ -17,11 +17,13 @@ public class CountTextController : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnPickUp.AddListener(UpdateCountText);
+        EventManager.OnReset.AddListener(() => { _count = 0;});
     }
 
     private void OnDisable()
     {
         EventManager.OnPickUp.RemoveListener(UpdateCountText);
+        EventManager.OnReset.RemoveListener(() => { _count = 0;});
     }
 
     private void UpdateCountText()

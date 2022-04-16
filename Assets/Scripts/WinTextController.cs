@@ -18,16 +18,17 @@ public class WinTextController : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnWin.AddListener(ShowWinMessage);
+        EventManager.OnReset.AddListener(() => { winText.enabled = false;});
     }
 
     private void OnDisable()
     {
         EventManager.OnWin.RemoveListener(ShowWinMessage);
+        EventManager.OnReset.RemoveListener(() => { winText.enabled = false;});
     }
 
     private void ShowWinMessage()
     {
         winText.enabled = true;
-        Debug.Log("hello there");
     }
 }

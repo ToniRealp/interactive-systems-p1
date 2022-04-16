@@ -33,6 +33,5 @@ public class PlayerController : MonoBehaviour
         _movement.Set(movementVector.x,0, movementVector.y);
         _animator.SetFloat(XMovement,movementVector.x);
         _animator.SetFloat(YMovement,movementVector.y);
-        Debug.Log(movementVector.y);
     }
 }

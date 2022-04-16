@@ -8,4 +8,5 @@ public static class EventManager
 {
     public static readonly UnityEvent OnPickUp = new UnityEvent();
     public static readonly UnityEvent OnWin = new UnityEvent();
+    public static readonly UnityEvent OnReset = new UnityEvent();
 }

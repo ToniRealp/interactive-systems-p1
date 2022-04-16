@@ -16,10 +16,14 @@ public class SceneController : MonoBehaviour
 
     private void UpdateSceneState()
     {
-        if (GameObject.FindGameObjectsWithTag("PickUp").Length <= 1)
+        if (GameObject.FindGameObjectsWithTag("PickUp").Length <= 0)
         {
             EventManager.OnWin.Invoke();
-            Debug.Log("Finished");
         }  
+    }
+
+    public void ResetGame()
+    {
+        EventManager.OnReset.Invoke();
     }
 }
